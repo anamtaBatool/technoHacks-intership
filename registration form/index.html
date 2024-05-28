@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Create an Account</div>
+        <form>
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full_name" placeholder="Enter your name" required autocomplete="name">
+                </div>
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a Username" required autocomplete="username">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required autocomplete="email">
+                </div>
+                <div class="input-box">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone_number" placeholder="Enter your Phone Number" required autocomplete="tel">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Choose a Password" required autocomplete="new-password">
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required autocomplete="new-password">
+                </div>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <span class="dot one"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="not-say">
+                        <input type="radio" id="not-say" name="gender" value="not-say">
+                        <span class="dot one"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
